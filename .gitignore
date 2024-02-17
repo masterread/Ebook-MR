@@ -1,0 +1,10 @@
+# Node.js
+node_modules/
+
+# Arquivos de compilação
+dist/
+build/
+*.log
+
+# Arquivos de configuração
+.env
