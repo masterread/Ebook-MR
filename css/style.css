@@ -305,17 +305,18 @@ section.faq h2 {
     clear: both;
     display: block;
     overflow: hidden;
-	margin: 0 0 10px 0;
+    margin: 0 0 10px 0; /* Adicione um ponto e vírgula aqui */
 }
+
 .accordion {
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  font-size: 16px;
-  transition: 0.4s;
-	border: none;
-	position: relative;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.4s linear; /* Combinação das duas transições em uma única linha */
+    border: none;
+    position: relative;
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
@@ -323,14 +324,36 @@ section.faq h2 {
     clear: both;
     display: block;
     padding: 20px 20px 30px 20px;
-    background: #afafa;
-    -webkit-transition: all .4s linear;
-    -moz-transition: all .4s linear;
-    transition: all .4s linear;
-}
+    background-color: #afafa;}
+
+
 button.accordion svg {
     margin-top: -5px;
 }
+
+.panel {
+    padding: 25px;
+    background: #ffffff;
+    color: #000000;
+    max-height: 0;
+    margin-top: -12px;
+    overflow: hidden;
+}
+
+.panel-transition {
+    transition: max-height 0.2s ease-out; /* Adicione um ponto e vírgula aqui */
+}
+
+
+
+
+
+
+
+
+
+button.accordion svg {
+    margin-top: -5px;}
 .panel {
 	
     padding: 0 25px;
@@ -548,13 +571,13 @@ img.compra-segura {
 /* Responsivo */
 #floatingButton {
     position: fixed;
-    top: 80%;
+    top: 70%;
     left: 67%;
     background-color: transparent;
     border: none;
     border-radius: 50%;
     width: 55%;
-    height: 20%;
+    height: 35%;
     cursor: pointer;
     z-index: 1;
 }
